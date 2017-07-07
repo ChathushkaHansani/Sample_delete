@@ -1,0 +1,65 @@
+<html ng-app="greeting">
+<head>
+    <title>Angular JS</title>
+    <script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <!--<script src="print.js"></script>-->
+    <!--<script src="greetingcontroller.js"></script>-->
+   <!-- <script src="greeting2.js"></script>-->
+    <script src="employeeController.js"></script>
+    </head>
+    <body>
+    <!--<div ng-app>
+        simple maths {{146/10}}
+        </div>
+        <script type="application/javascript">
+        var v1=10;
+            var v2=20;
+            var ans = v1+v2;
+            document.write(ans);
+        </script>-->        
+        
+        <!--<script>
+            var printer = function(){
+            document.write("Printing from main <br/>");
+            
+                var job1 = function(){
+                document.write("printing job1 <br/>");
+                
+                };
+                 var job2 = function(){
+                document.write("printing job2 <br/>");
+                
+                };
+                
+                return{
+                    printjob1 : job1,
+                    printjob2 : job2
+                }
+            }
+        </script>-->
+     
+       <!-- <script type="application/javascript">
+            var walk=function(){
+                document.write("she is walking");
+            }
+            
+            var executer = function(param){
+            document.write("inside executer <br/>");
+            param();
+            }
+            
+            executer(walk);
+        </script>-->
+        
+        <div ng-controller="employeecontroller">
+            <h1>{{employee.title}}</h1>
+            <div>Name: {{employee.fname}}</div>
+            <div>City: {{employee.city}}</div>
+            <div>City: {{employee.mobile}}</div>
+            <div>
+            <img src="{{employee.image}}" title="{{employee.name}}" width="250" height="250"/>
+            </div>
+        </div>
+    </body>
+
+</html>
